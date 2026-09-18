@@ -1,7 +1,5 @@
 # CMPE 310 Lab 2
 
-Assembly starter files for the four lab tasks. The task code is not finished yet.
-
 ## Compile and run
 
 In GitHub Codespaces or Linux, run:
