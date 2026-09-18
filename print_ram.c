@@ -4,6 +4,9 @@ extern unsigned char ram[];
 extern void fill_ram(void);
 
 int main(void) {
+    for (int i = 0x50; i <= 0x58; i++) {
+        ram[i] = 0xAA;
+    }
     fill_ram();
     printf("RAM contents from 50H to 58H:\n");
     for (int i = 0x50; i <= 0x58; i++) {

@@ -5,5 +5,13 @@
 .section .text
 .globl fill_ram
 fill_ram:
-    # Task 1: use direct addressing to write 0xFF to RAM[50H..58H].
+    movb $0xFF, ram+0x50(%rip)
+    movb $0xFF, ram+0x51(%rip)
+    movb $0xFF, ram+0x52(%rip)
+    movb $0xFF, ram+0x53(%rip)
+    movb $0xFF, ram+0x54(%rip)
+    movb $0xFF, ram+0x55(%rip)
+    movb $0xFF, ram+0x56(%rip)
+    movb $0xFF, ram+0x57(%rip)
+    movb $0xFF, ram+0x58(%rip)
     ret

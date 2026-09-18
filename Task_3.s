@@ -5,5 +5,11 @@
 .section .text
 .globl fill_ram
 fill_ram:
-    # Task 3: clear RAM[50H..58H] with 0x00.
+    lea ram+0x50(%rip), %rax
+    mov $9, %ecx
+clear_byte:
+    movb $0x00, (%rax)
+    inc %rax
+    dec %ecx
+    jne clear_byte
     ret

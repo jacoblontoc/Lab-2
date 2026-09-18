@@ -5,5 +5,11 @@
 .section .text
 .globl fill_ram
 fill_ram:
-    # Task 2: use indirect addressing to write 0xFF to RAM[50H..58H].
+    lea ram+0x50(%rip), %rax
+    mov $9, %ecx
+write_byte:
+    movb $0xFF, (%rax)
+    inc %rax
+    dec %ecx
+    jne write_byte
     ret
