@@ -12,5 +12,3 @@ gcc -no-pie Task_1.s print_ram.c -o task1
 ```
 
 Replace `Task_1.s` and `task1` with the corresponding file and output name for Tasks 2 and 3. Task 4 needs its own test program because it uses `sum_series` instead of `fill_ram`.
-
-The supplied slides are named `Lab_2.pptx` but call the assignment “Lab 1.” Check Blackboard before submitting. Submit the public GitHub repository link there.
